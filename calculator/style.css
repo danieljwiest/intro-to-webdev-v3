@@ -34,11 +34,11 @@ body {
 .keypad{
     display: grid;
     grid-template-areas:
-    "clrBtn  clrBtn  bckBtn  divBtn"
-    "btn7    btn8    btn9    multBtn"
-    "btn4    btn5    btn6    minusBtn"
-    "btn1    btn2    btn3    plusBtn"
-    "btn0    btn0    btn0    equalBtn";
+    "btnClr  btnClr  btnBack  btnDiv"
+    "btn7    btn8    btn9    btnMult"
+    "btn4    btn5    btn6    btnMinus"
+    "btn1    btn2    btn3    btnPlus"
+    "btn0    btn0    btn0    btnEquals";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
@@ -68,12 +68,12 @@ body {
     color:white;
 }
 
-.clrBtn {
-    grid-area: clrBtn;
+.btnClr {
+    grid-area: btnClr;
 }
 
-.bckBtn {
-    grid-area: bckBtn;
+.btnBack {
+    grid-area: btnBack;
 }
 
 .btn0 {
@@ -116,22 +116,22 @@ body {
     grid-area: btn9;
 }
 
-.divBtn{
-    grid-area: divBtn;
+.btnDiv{
+    grid-area: btnDiv;
 }
 
-.multBtn {
-    grid-area: multBtn;
+.btnMult {
+    grid-area: btnMult;
 }
 
-.minusBtn {
-    grid-area: minusBtn;
+.btnMinus {
+    grid-area: btnMinus;
 }
 
-.plusBtn {
-    grid-area: plusBtn;
+.btnPlus {
+    grid-area: btnPlus;
 }
 
-.equalBtn {
-    grid-area: equalBtn;
+.btnEquals {
+    grid-area: btnEquals;
 }
