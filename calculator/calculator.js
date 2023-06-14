@@ -27,7 +27,8 @@ document.addEventListener("keydown", function(event) {
 //Function to parse input and route to correct handler functions
 function handleInput(input) {
 const isNumRegex = /^[0-9]$/;
-const isOperatorRegex = /[+−÷×]/;
+const isOperatorRegex = /[+−÷×-]/;
+console.log(input)
 
     switch (true) {
         case isNumRegex.test(input):
@@ -150,6 +151,7 @@ function evaluate(numString1, numString2, operator) {
         case "+":
             return add(num1, num2);
         case "−":
+        case "-":
             return subtract(num1, num2);
         case "×":
             return multiply(num1, num2);
