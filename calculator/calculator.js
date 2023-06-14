@@ -26,7 +26,7 @@ document.addEventListener("keydown", function(event) {
 
 //Function to parse input and route to correct handler functions
 function handleInput(input) {
-const isNumRegex = /\d/;
+const isNumRegex = /^[0-9]$/;
 const isOperatorRegex = /[+−÷×]/;
 
     switch (true) {
@@ -46,6 +46,7 @@ const isOperatorRegex = /[+−÷×]/;
             handleEqualsBtn();
             break;
         default:
+            console.log("invalid input")
             //Do nothing. Invalid input
     } 
 }
